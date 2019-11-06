@@ -11,3 +11,4 @@ if you want the latest version of tRanslate then you can use devtools from CRAN:
 
 <code> install_github('code-acc/tRanslate', build_vignettes = T) </code>
 
+<code> library(tRanslate) </code>
