@@ -1,0 +1,11 @@
+Package: DNAtoAA
+Type: Package
+Title: Translates DNA to RA to amino acids
+Version: 0.1.0
+Author: Minal Jamsandekar <minalj365@gmail.com>
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: Sinple function handles upper lower case and mixtures of U and T.
+License: GPL (>=2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
