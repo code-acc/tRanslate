@@ -1,0 +1,35 @@
+---
+title: "Translation Tutorial"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Translation Tutorial}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+# Installation
+This R package can be installed directly from GitHub using the following code. The devtools installtion step can be skipped if you already have installed that package.
+
+```{r, eval=FALSE}
+install.packages("devtools")
+library(devtools)
+install_github('code-acc/tRanslate', build_vignettes = T)
+library(DNAtoAA)
+```
+
+# Example code
+
+The code below will generate a statement which I feel is important for all scientists to agree with.
+
+This is a crazy simple package that only translates DNA or RNA sequences into amino acid codes. It does not support abiguity codes. It only will correctly for sequences that are from the genome of eukaryotes.
+
+```{r}
+# load the package
+library(DNAtoAA)
+
+# create a DNA sequence
+data <- "ATGtacacagctaaaGAacggauuuctacacatGAAGgtagagaggccacagagagcacguag"
+
+# translae the DNA sequence into IUPAC amino acid code
+Translate(data)
+```
